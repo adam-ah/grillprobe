@@ -1,0 +1,35 @@
+house:
+  active: true
+  MaxFileLength:
+    active: true
+    maxLines: 400
+  NoComments:
+    active: true
+
+comments:
+  UndocumentedPublicClass:
+    active: false
+  UndocumentedPublicFunction:
+    active: false
+  UndocumentedPublicProperty:
+    active: false
+  AbsentOrWrongFileLicense:
+    active: false
+
+complexity:
+  TooManyFunctions:
+    thresholdInFiles: 16
+    thresholdInClasses: 16
+    thresholdInInterfaces: 16
+    thresholdInObjects: 16
+    thresholdInEnums: 16
+
+naming:
+  FunctionMinLength:
+    minimumFunctionNameLength: 2
+
+style:
+  ReturnCount:
+    excludeGuardClauses: true
+  DataClassContainsFunctions:
+    active: false

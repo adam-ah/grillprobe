@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Grill Probe</string>
+    <string name="connect">Connect iGrill</string>
+
+    <string name="status_not_connected">Not connected</string>
+    <string name="status_bluetooth_off">Bluetooth is off</string>
+    <string name="status_scanning">Searching for your iGrill…</string>
+    <string name="status_looking">Looking for your iGrill…</string>
+    <string name="status_not_found">iGrill not found. Is it on, nearby and closed in the Weber app?</string>
+    <string name="status_scan_failed">Bluetooth scan failed (%1$d), retrying</string>
+    <string name="status_connecting">Connecting to %1$s…</string>
+    <string name="status_discovering">Connected, reading services…</string>
+    <string name="status_authenticating">Authenticating…</string>
+    <string name="status_pairing">Pairing, attempt %1$d…</string>
+    <string name="status_no_probe">Plug in the probe</string>
+    <string name="status_disconnected">Connection lost, reconnecting…</string>
+    <string name="status_timeout">Connection timed out, retrying</string>
+    <string name="status_auth_failed">Handshake stalled, reconnecting…</string>
+    <string name="status_not_igrill">That device isn’t an iGrill</string>
+    <string name="status_stopped">Disconnected</string>
+    <string name="status_gave_up">Couldn’t connect. Tap Connect to try again</string>
+    <string name="status_no_bluetooth">This phone has no Bluetooth</string>
+    <string name="status_permission">Allow Nearby devices to connect</string>
+
+    <string name="battery">%1$d%%</string>
+    <string name="current">Current</string>
+    <string name="target">Target</string>
+    <string name="custom_target">Custom</string>
+    <string name="target_with_name">Target · %1$s</string>
+    <string name="set_target">Not set</string>
+    <string name="edit_target">Edit target temperature</string>
+    <string name="target_dialog_celsius">Target temperature (°C)</string>
+    <string name="target_dialog_fahrenheit">Target temperature (°F)</string>
+    <string name="set">Set</string>
+    <string name="degrees">%1$s°</string>
+    <string name="temperature_celsius">%1$s °C</string>
+    <string name="temperature_fahrenheit">%1$s °F</string>
+    <string name="rate_rising">Rising %1$s/min</string>
+    <string name="rate_falling">Cooling %1$s/min</string>
+    <string name="decrease">−</string>
+    <string name="increase">+</string>
+    <string name="lower_target">Lower target</string>
+    <string name="raise_target">Raise target</string>
+
+    <string name="animal_beef">Beef</string>
+    <string name="animal_pork">Pork</string>
+    <string name="animal_chicken">Chicken</string>
+    <string name="animal_lamb">Lamb</string>
+    <string name="back">‹</string>
+    <string name="back_to_animals">Back to animals</string>
+    <string name="preset_chip">%1$s · %2$s</string>
+    <string name="preset_rare">Rare</string>
+    <string name="preset_medium_rare">Medium rare</string>
+    <string name="preset_medium">Medium</string>
+    <string name="preset_medium_well">Medium well</string>
+    <string name="preset_well_done">Well done</string>
+    <string name="preset_brisket">Brisket</string>
+    <string name="preset_tenderloin">Tenderloin</string>
+    <string name="preset_roast">Roast</string>
+    <string name="preset_ribs">Ribs</string>
+    <string name="preset_pulled_pork">Pulled pork</string>
+    <string name="preset_breast">Breast</string>
+    <string name="preset_thigh">Thigh &amp; leg</string>
+    <string name="preset_wings">Wings</string>
+    <string name="preset_pulled_shoulder">Pulled shoulder</string>
+
+    <string name="ready_in">Ready in</string>
+    <string name="done_at">Done at</string>
+    <string name="no_value">--</string>
+    <string name="early_estimate">Early estimate</string>
+    <string name="range">Range %1$s – %2$s</string>
+    <string name="cooking_for">Cooking %1$s</string>
+    <string name="summary_reached_detail">Reached at %1$s · %2$s</string>
+    <string name="summary_levelling">May level off below target</string>
+    <string name="summary_levelling_detail">Heading for about %1$s, target %2$s. Turn up the heat or expect a long wait.</string>
+    <string name="summary_stalled">Temperature stalled</string>
+    <string name="summary_stalled_detail">Flat for a few minutes. Big cuts often stall before pushing through.</string>
+    <string name="summary_falling">Temperature falling</string>
+    <string name="summary_falling_detail">No estimate while the probe is cooling.</string>
+    <string name="summary_not_rising">Stable temperature</string>
+    <string name="summary_not_rising_detail">Estimates after you start cooking.</string>
+    <string name="summary_needs_target">Choose a target</string>
+    <string name="summary_needs_target_detail">Pick an animal and cut to get a finish time.</string>
+    <string name="summary_estimating">Estimating…</string>
+    <string name="summary_estimating_detail">A few more readings are needed.</string>
+    <string name="less_than_minute">&lt;1 min</string>
+    <string name="hours_minutes">%1$dh %2$02dm</string>
+    <plurals name="minutes">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+
+    <string name="legend_measured">Measured</string>
+    <string name="legend_predicted">Predicted</string>
+    <string name="waiting_for_readings">Waiting for the first reading…</string>
+    <string name="connect_hint">Connect your iGrill to see live temperature</string>
+
+    <string name="show_celsius">Show °C</string>
+    <string name="show_fahrenheit">Show °F</string>
+    <string name="new_cook">New cook</string>
+    <string name="new_cook_confirm">Start a new cook? This clears the graph.</string>
+    <string name="cancel">Cancel</string>
+    <string name="test_alarm">Test alarm</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="stop_alarm">Silence alarm</string>
+    <string name="target_reached">Target reached</string>
+    <string name="alarm_target">Target %1$s</string>
+    <string name="alarm_preset_target">%1$s · target %2$s</string>
+
+    <string name="channel_status">Probe status</string>
+    <string name="monitoring">Monitoring</string>
+    <string name="notification_title">%1$s → %2$s</string>
+    <string name="notification_eta">%1$s left · done %2$s</string>
+</resources>
