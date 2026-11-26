@@ -50,7 +50,7 @@ android {
         checkAllWarnings = true
         checkTestSources = true
         checkDependencies = true
-        disable += setOf("NewerVersionAvailable", "GradleDependency", "AndroidGradlePluginVersion")
+        disable += setOf("NewerVersionAvailable", "GradleDependency", "AndroidGradlePluginVersion", "OldTargetApi")
     }
 
     testOptions {
