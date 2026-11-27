@@ -25,6 +25,13 @@ jobs:
 
       - uses: gradle/actions/setup-gradle@v4
 
+      - name: Pick next version
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          last=$(gh release list -R "$GITHUB_REPOSITORY" --limit 1 --json tagName -q '.[0].tagName // "v1.0.0"')
+          echo "BUILD_NUMBER=$(( ${last##*.} + 1 ))" >> "$GITHUB_ENV"
+
       - name: Decode signing key
         env:
           SIGNING_KEYSTORE_BASE64: ${{ secrets.SIGNING_KEYSTORE_BASE64 }}
@@ -44,7 +51,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           NOTES: ${{ inputs.notes }}
         run: |
-          version="1.0.${{ github.run_number }}"
+          version="1.0.$BUILD_NUMBER"
           cp app/build/outputs/apk/release/app-release.apk "GrillProbe-$version.apk"
           gh release create "v$version" "GrillProbe-$version.apk" \
             --title "Grill Probe $version" \

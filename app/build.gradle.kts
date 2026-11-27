@@ -10,7 +10,9 @@ android {
     namespace = "app.grillprobe"
     compileSdk = 36
 
-    val buildNumber = providers.environmentVariable("GITHUB_RUN_NUMBER").orNull?.toIntOrNull() ?: 1
+    val buildNumber =
+        (providers.environmentVariable("BUILD_NUMBER").orNull ?: providers.environmentVariable("GITHUB_RUN_NUMBER").orNull)
+            ?.toIntOrNull() ?: 1
     val keystorePath = providers.environmentVariable("SIGNING_KEYSTORE_PATH").orNull
 
     defaultConfig {
