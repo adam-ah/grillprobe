@@ -1,8 +1,8 @@
 # Grill Probe
 
-An Android app for the Weber iGrill Mini that tells you when your food will be ready.
+**Know when it's done.** Your Weber iGrill shows the temperature. Grill Probe tells you when dinner's ready.
 
-The official app shows the temperature. Grill Probe also predicts the finish: it fits a heating curve to the probe readings and gives you "ready in 36 min, done at 13:27", warns you when the cook is levelling off below your target, and sounds a proper alarm when the target is reached, even with the phone locked.
+It fits a heating curve to the live probe readings and says "ready in 36 min, done at 13:27". It warns you when the cook is levelling off short of your target, and when you hit it, it sounds an alarm you can't miss, even with the phone locked.
 
 <p>
   <img src="screenshots/02-heating.png" width="24%" alt="Heating with an estimate">
